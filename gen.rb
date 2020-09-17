@@ -1,12 +1,15 @@
 def gen(n)
-    
+    abcdario = " "
+    count = 1
     for i in ("a".."z") do # Para i en el rango de la A a Z 
-        if n == i # si numero de usuario es igual al numero de iteraciones
-        print("#{i}") # Imprima el numero de iteraciones = numero del usuario o def
+        abcdario +=i
+        break if n == count
+        count +=1
         
-        end
+        
     end
+    puts abcdario 
 end
-    #No funciona..( se ocupa .NEXT pero no se la logica como aplicarlo)
-gen(2)
 
+    
+gen(3)
